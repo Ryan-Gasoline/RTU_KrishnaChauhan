@@ -1,6 +1,6 @@
 /*
  * Lab 3, Task 3
- * Student Name, Student ID
+ * Krishna Nitin Chauhan, 241ADB048
  *
  * Implement basic string handling functions.
  * Write your own versions of:
@@ -41,10 +41,18 @@ int main(void) {
 
 // Implement functions below
 int my_strlen(const char *str) {
-    // TODO: count characters until '\0'
-    return 0; // placeholder
+    int len = 0;
+    while (str[len] != '\0') {
+        len++;
+    }
+    return len;
 }
 
 void my_strcpy(char *dest, const char *src) {
-    // TODO: copy characters until '\0'
+    int i = 0;
+    while (src[i] != '\0') {
+        dest[i] = src[i];
+        i++;
+    }
+    dest[i] = '\0';
 }
